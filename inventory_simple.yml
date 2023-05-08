@@ -1,4 +1,4 @@
- ---
+---
  webservers:
    hosts:
      webserver1:

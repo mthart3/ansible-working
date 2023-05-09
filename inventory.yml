@@ -1,17 +1,19 @@
-windows:
-  hosts:
-    webserver1:
-      ansible_host: 204.236.171.7
-  vars:
-    ansible_connection: winrm
-    ansible_winrm_transport: ntlm
-    ansible_winrm_server_cert_validation: ignore
-    ansible_user: Administrator
-    ansible_password: JustM300
-linux:
-  hosts:
-    webserver2:
-      ansible_host: 54.241.93.49
-  vars:
-      ansible_user: ubuntu
-      ansible_ssh_private_key_file: /home/ubuntu/.ssh/id_rsa
+[automationcontroller]
+aap.localhost.com ansible_connection=local
+
+[database]
+
+[all:vars]
+admin_password='Password1234'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='Password1234'
+
+registry_url='registry.redhat.io'
+registry_username=16977403|Trah3
+registry_password=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJhYmJjMTcxZTVkOTk0NmM3OWJmZDk5MDU2YWU0ZGFhMSJ9.YhloLp0YBwnyHEPdTyhMtMxcSMGVwLtQTILT4AzucPJ7_aV12l-g1KALszr-DJgLY57D4qq9YmyoOcsjDG_oCxFPnjiploq_SOme80vPOgXW-OHg6sZYP2dWn6pFhewJzqUInAXOw-tDHmUTOTL6Mf4u152IdE5RWSi8AQbmdbCMBKB0Yzg7GFdlaBaWrKXM_P699H2qUJHDaOxy9gSi7olNTlLYWWSv1TqmfY1eCURb5M74hGtyoOD_WfKx3H9LXpwTYLsQFWLJEcp5hEIpeOzrd1wmcko9FU-50StXz2x64J3KwB4kKdmJHHDDt7cb8QdO147tkbMAQkaalpzTG4xaPcoKZbTgXNoUqd6ILEIK0TLYu7juMpGSD9O5A23tfudRYUpkMYGE0a6vmzbPoVPy93MD7bKt7s9Bs-C7yUVHToCB6qUS_GL59Km78bk7xJsx0en_1W204lL6t9JmNvGk5NToiB1C63usHJ0YAYoOHcqdnaDVVGTjwqg4evoDYodrmYHpIzXCvZqI3izA2ilVpugenhS1RhAVNivgUCEmKLg13H2r1M-dkaYkpksqe5FDrgB8cfn4mZxAeJQYjIO9QgvAYqVqN6nYoeLb0HbwsBpzn4WkiFIjcPcjW8PKUSkT009WkPSV1lOt-QLlBwJO_6YvCoPG6eTZxHNVxxk
+

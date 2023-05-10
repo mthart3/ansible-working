@@ -1,2 +1,4 @@
----
-# tasks file for copy-web-files
+- name: Copy web files
+  win_copy:
+    src: ./files
+    dest: C:\inetpub\wwwroot
